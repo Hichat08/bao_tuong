@@ -1,13 +1,13 @@
 {
-  "name": "Báo Tường Online",
+  "name": "Báo Tường 12B10",
   "short_name": "Báo Tường",
   "start_url": "./bao-tuong.html",
   "display": "standalone",
-  "background_color": "#f7f3e8",
+  "background_color": "#fff1f5",
   "theme_color": "#ec4899",
   "icons": [
     {
-      "src": "logo.jpg",
+      "src": "img/anhtruoccong.jpg",
       "sizes": "192x192",
       "type": "image/jpeg"
     }
