@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Báo Tường 12B10 - Chắp Cánh Ước Mơ</title>
+    <meta
+      name="description"
+      content="Báo Tường Online - nơi lưu giữ kỷ niệm, sáng tác và chia sẻ lời tri ân tới thầy cô."
+    />
+    <meta property="og:title" content="Báo Tường 12B10 - Chắp Cánh Ước Mơ" />
+    <meta
+      property="og:description"
+      content="Chia sẻ thơ, văn, tranh và lời tri ân đến thầy cô."
+    />
+    <meta property="og:image" content="logo.jpg" />
+    <meta name="theme-color" content="#ec4899" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="logo.jpg" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#gioithieu">Bỏ qua tới nội dung</a>
+    <header>
+      <div class="header-ribbon">12B10</div>
+      <div class="main-title">Báo Tường 12B10</div>
+      <div class="subtitle">Chắp cánh ước mơ</div>
+      <div class="classline">Trường THPT Sốp Cộp · Năm học 2025–2026</div>
+      <nav aria-label="Chuyển hướng trang">
+        <a href="#gioithieu">Giới thiệu</a>
+        <a href="#sangtac">Sáng tác</a>
+        <a href="#tranh">Tranh ảnh</a>
+        <a href="#binhluan">Bình luận</a>
+      </nav>
+    </header>
+
+    <main class="container" role="main">
+      <section id="gioithieu">
+        <div class="section-title">Giới thiệu</div>
+        <div class="content">
+          Báo tường online là nơi lưu giữ những kỷ niệm đẹp của tuổi học trò, là
+          không gian để các bạn học sinh thể hiện cảm xúc, tài năng qua thơ,
+          văn, tranh vẽ và những lời tri ân gửi tới thầy cô nhân ngày 20-11.
+        </div>
+      </section>
+      <section id="sangtac">
+        <div class="section-title">Sáng tác nổi bật</div>
+        <div class="content">
+          <b>Bài thơ: Người Lái Đò</b><br />
+          <i>
+            Lặng lẽ bên dòng sông<br />
+            Thầy đưa bao chuyến đò<br />
+            Dẫu thời gian lặng trôi<br />
+            Nghĩa thầy luôn còn mãi.<br />
+          </i>
+        </div>
+        <div class="author">lớp 12B10</div>
+      </section>
+      <section id="tranh">
+        <div class="section-title">Tranh ảnh kỷ niệm</div>
+        <div class="gallery">
+          <img
+            src="anhtruoccong.jpg"
+            alt="Kỷ niệm lớp học"
+            loading="lazy"
+            width="180"
+            height="120"
+          />
+          <img
+            src="khaigiang.jpg"
+            alt="Vẽ báo tường"
+            loading="lazy"
+            width="180"
+            height="120"
+          />
+          <img
+            src="logo.jpg"
+            alt="Tập thể lớp"
+            loading="lazy"
+            width="180"
+            height="120"
+          />
+          <img
+            src="anhtruoccong.jpg"
+            alt="Thầy cô và học sinh"
+            loading="lazy"
+            width="180"
+            height="120"
+          />
+        </div>
+      </section>
+      <section id="binhluan" class="comment-section">
+        <h3>Bình luận & Góp ý</h3>
+        <form
+          id="comment-form"
+          class="comment-form"
+          action="binhluan.html"
+          method="get"
+          aria-label="Form gửi bình luận"
+        >
+          <label for="name" class="sr-only">Tên của bạn</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Tên của bạn"
+            aria-label="Tên của bạn"
+            required
+          />
+          <label for="comment" class="sr-only">Nội dung bình luận</label>
+          <textarea
+            name="comment"
+            id="comment"
+            rows="2"
+            placeholder="Viết lời nhắn..."
+            aria-label="Viết lời nhắn"
+            required
+          ></textarea>
+          <button type="submit">Gửi bình luận</button>
+        </form>
+        <div
+          class="comments-list"
+          id="comments-list"
+          aria-live="polite"
+          role="region"
+          aria-label="Danh sách bình luận"
+        ></div>
+      </section>
+    </main>
+    <footer class="page-footer">
+      © 2026 LÒ VĂN VIỆT · Lớp 12B10 · Chắp cánh ước mơ
+    </footer>
+  </body>
+</html>
