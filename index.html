@@ -4,13 +4,155 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Báo Tường 12B10 - Chắp Cánh Ước Mơ</title>
-    <meta http-equiv="refresh" content="0; url=bao-tuong.html" />
+    <meta name="theme-color" content="#ec4899" />
+    <meta http-equiv="refresh" content="3; url=bao-tuong.html" />
     <link rel="canonical" href="bao-tuong.html" />
+    <style>
+      :root {
+        --ink: #2b1b2f;
+        --muted: #6b4461;
+        --accent: #ec4899;
+        --accent-2: #a21caf;
+        --paper: #fff1f5;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background:
+          radial-gradient(1200px 500px at 10% -10%, #ffe4f1 0%, transparent 60%),
+          radial-gradient(900px 400px at 110% 10%, #ffd1e8 0%, transparent 55%),
+          linear-gradient(135deg, #fff1f5 0%, #fde2f3 100%);
+        font-family: "Manrope", "Segoe UI", Arial, sans-serif;
+        color: var(--ink);
+        padding: 24px;
+      }
+      .card {
+        width: min(720px, 100%);
+        background: var(--paper);
+        border-radius: 24px;
+        padding: 32px;
+        border: 2px solid rgba(236, 72, 153, 0.25);
+        box-shadow: 0 18px 40px rgba(236, 72, 153, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+      .card::before {
+        content: "";
+        position: absolute;
+        inset: -10px;
+        background: linear-gradient(
+          120deg,
+          rgba(236, 72, 153, 0.18),
+          rgba(251, 113, 133, 0.12),
+          rgba(162, 28, 175, 0.16)
+        );
+        filter: blur(20px);
+        z-index: -1;
+      }
+      .ribbon {
+        position: absolute;
+        right: -40px;
+        top: 18px;
+        background: linear-gradient(90deg, #ffd1e8 0%, #f472b6 100%);
+        color: #5b0b2a;
+        padding: 8px 54px;
+        font-weight: 800;
+        letter-spacing: 0.6px;
+        transform: rotate(6deg);
+        box-shadow: 0 10px 22px rgba(162, 28, 175, 0.25);
+      }
+      h1 {
+        margin: 0 0 8px 0;
+        font-size: clamp(2rem, 4vw, 2.8rem);
+        font-family: "Playfair Display", "Times New Roman", serif;
+        color: var(--accent-2);
+      }
+      p {
+        margin: 6px 0 18px 0;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+      .actions {
+        display: flex;
+        gap: 12px;
+        flex-wrap: wrap;
+      }
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px 18px;
+        border-radius: 10px;
+        text-decoration: none;
+        font-weight: 700;
+        color: #fff;
+        background: linear-gradient(90deg, #ec4899 0%, #a21caf 100%);
+        box-shadow: 0 10px 22px rgba(236, 72, 153, 0.25);
+        transition: transform 0.2s, box-shadow 0.2s;
+      }
+      .btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 12px 26px rgba(236, 72, 153, 0.35);
+      }
+      .ghost {
+        color: var(--accent-2);
+        background: transparent;
+        border: 2px solid rgba(236, 72, 153, 0.35);
+        box-shadow: none;
+      }
+      .timer {
+        font-size: 0.95rem;
+        margin-top: 10px;
+        color: #8b4c78;
+      }
+      @media (prefers-reduced-motion: no-preference) {
+        .card {
+          animation: fadeUp 0.6s ease both;
+        }
+        .ribbon {
+          animation: float 2.4s ease-in-out infinite;
+        }
+      }
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      @keyframes float {
+        0%,
+        100% {
+          transform: rotate(6deg) translateY(0);
+        }
+        50% {
+          transform: rotate(6deg) translateY(-4px);
+        }
+      }
+    </style>
   </head>
   <body>
-    <p>
-      Đang chuyển hướng đến trang chính… Nếu không tự chuyển, mở
-      <a href="bao-tuong.html">Báo Tường 12B10</a>.
-    </p>
+    <main class="card" role="main">
+      <div class="ribbon">12B10</div>
+      <h1>Báo Tường 12B10</h1>
+      <p>Chắp cánh ước mơ · Trường THPT Sốp Cộp · Năm học 2025–2026</p>
+      <p>
+        Trang chính sẽ mở sau vài giây. Nếu chưa tự chuyển, bạn bấm vào nút bên
+        dưới nhé.
+      </p>
+      <div class="actions">
+        <a class="btn" href="bao-tuong.html">Vào Trang Báo Tường</a>
+        <a class="btn ghost" href="binhluan.html">Xem Bình Luận</a>
+      </div>
+      <div class="timer">Tự động chuyển hướng sau 3 giây…</div>
+    </main>
   </body>
 </html>
